@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es-DO">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial CSS // Efecto etiqueta para nuestros encabezados</title>
+
+  <style>
+    #contenedor {
+      width: 700px;
+      /*El ancho de la caja o <div>*/
+      height: 700px;
+      /*El altura de la caja o <div>*/
+      font-family: Arial, Helvetica, sans-serif;
+      /*tipo de letra de los elementos de la caja o <div*/
+      background-color: #ccc;
+      /*color de fondo de la caja o <div>, es decir, el color gris*/
+      margin: auto;
+      /*para que el elemento <div> o la caja este centrada horizontalmente*/
+      padding-top: 30px;
+      /*Es el espacio que hay entre el primer <h1> o cabecera #1 y el border de la caja*/
+    }
+
+    /*Este conjunto de reglas hace referencia al primer encabezado, es decir, cabecera #1*/
+    .normal {
+      color: #fff;
+      /*color de las letras del cabezado*/
+      background-color: #09f;
+      /*Color de fondo del encabezado, es decir, el azul cielo*/
+      padding: 10px 20px;
+      /*El espaciado interno del encabezado*/
+      margin-left: -20px;
+      /*Esta regla permitido que el encabezado se salga de contenedor 20px logrando un efecto que esta por fuera del color gris del contenedor*/
+      position: relative;
+      /*Se utiliza en este caso para poder mover el elemento*/
+      width: 30%;
+      /*Como los elementos <h1> son a nivel de bloque ocuparan todo el espacio pero con el width: 30% hace que el encabezado solo ocupe el 30% de su anchura*/
+      box-shadow: 1px 1px 1px #000;
+      /*Es ala sombra que esta en la parte exterior del elemento <h1>*/
+      -moz-box-shadow: 1px 1px 1px #000;
+      -webkit-box-shadow: 1px 1px 1px #000;
+      margin-bottom: 70px;
+      /*Es el espaciado que hay entr la cabecera #1 y la cabecera #2*/
+    }
+
+    /*Este conjunto de reglas hace referencia al primer encabezado, es decir, cabecera #1*/
+
+    /*=======================================================================================*/
+
+    /*Este conjunto de reglas hace referencia al segundo encabezado, es decir, cabecera #2*/
+    .sin-border {
+      color: #fff;
+      /*color de las letras del cabezado*/
+      background-color: #09f;
+      /*Color de fondo del encabezado, es decir, el azul cielo*/
+      padding: 10px 20px;
+      /*El espaciado interno del encabezado*/
+      margin-left: -20px;
+      /*Esta regla permitido que el encabezado se salga de contenedor 20px logrando un efecto que esta por fuera del color gris del contenedor*/
+      position: relative;
+      /*Se utiliza en este caso para poder mover el elemento*/
+      width: 30%;
+      /*Como los elementos <h1> son a nivel de bloque ocuparan todo el espacio pero con el width: 30% hace que el encabezado solo ocupe el 30% de su anchura*/
+      box-shadow: 1px 1px 1px #000;
+      /*Es ala sombra que esta en la parte exterior del elemento <h1>*/
+      -moz-box-shadow: 1px 1px 1px #000;
+      -webkit-box-shadow: 1px 1px 1px #000;
+      margin-bottom: 70px;
+      /*Es el espaciado que hay entr la cabecera #1 y la cabecera #2*/
+      border-radius: 0 50px 50px 0;
+    }
+
+    /*Este conjunto de reglas hace referencia al segundo encabezado, es decir, cabecera #2*/
+
+    /*Este conjunto de reglas hace referencia al elemento <span> con la class forma, con estas reglas se hace la forma en los encabezados como de un papel cuando se dobla en la hoja, es debe conserva igual para lograr el aspecto deseado, que es como el de un rentangulo invertido pequeño*/
+    .forma {
+      width: 0px;
+      height: 0px;
+      line-height: 0px;
+      border-left: 20px solid transparent;
+      border-top: 10px solid #03f;
+      position: absolute;
+      top: 100%;
+      left: 0%;
+    }
+
+    /*Este conjunto de reglas hace referencia al elemento <span> con la class forma, con estas reglas se hace la forma en los encabezados como de un papel cuando se dobla en la hoja, es debe conserva igual para lograr el aspecto deseado, que es como el de un rentangulo invertido pequeño*/
+
+
+    /*Este conjunto de reglas hace referencia al tercer encabezado, es decir, cabecera #3*/
+    .derecha {
+      color: #fff;
+      /*color de las letras del cabezado*/
+      background-color: #09f;
+      /*Color de fondo del encabezado, es decir, el azul cielo*/
+      padding: 10px 20px;
+      /*El espaciado interno del encabezado*/
+      margin-right: -20px;
+      /*Esta regla permitido que el encabezado se salga de contenedor 20px logrando un efecto que esta por fuera del color gris del contenedor*/
+      position: relative;
+      /*Se utiliza en este caso para poder mover el elemento*/
+      width: 30%;
+      /*Como los elementos <h1> son a nivel de bloque ocuparan todo el espacio pero con el width: 30% hace que el encabezado solo ocupe el 30% de su anchura*/
+      box-shadow: 1px 1px 1px #000;
+      /*Es ala sombra que esta en la parte exterior del elemento <h1>*/
+      -moz-box-shadow: 1px 1px 1px #000;
+      -webkit-box-shadow: 1px 1px 1px #000;
+      margin-bottom: 70px;
+      /*Es el espaciado que hay entr la cabecera #1 y la cabecera #2*/
+      float: right;
+      /*es para que el encabezado #3 se coloque del lado derecha del contenedor*/
+    }
+
+    /*Este conjunto de reglas hace referencia al tercer encabezado, es decir, cabecera #3*/
+
+    /*Este conjunto de reglas hace referencia al elemento <span> con la class forma, con estas reglas se hace la forma en los encabezados como de un papel cuando se dobla en la hoja, es debe conserva igual para lograr el aspecto deseado, que es como el de un rentangulo invertido pequeño*/
+    .forma-derecha {
+      width: 0px;
+      height: 0px;
+      line-height: 0px;
+      border-right: 20px solid transparent;
+      border-top: 10px solid #03f;
+      position: absolute;
+      top: 100%;
+      right: 0%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="contenedor">
+    <h1 class="normal">Cabacera #1 <span class="forma"></span></h1>
+    <h1 class="sin-border">Cabacera #2 <span class="forma"></span></h1>
+    <h1 class="derecha">Cabacera #3 <span class="forma-derecha"></span></h1>
+  </div>
+
+</body>
+
+</html>
